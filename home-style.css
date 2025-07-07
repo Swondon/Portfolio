@@ -11,6 +11,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Jersey 10", monospace;
+    height: 100vh;
 }
 
 .top-nav {
@@ -26,7 +27,7 @@ body {
 }
 
 .top-nav a {
-    font-size: 24px;
+    font-size: 20px;
     /* font-weight: bold; */
     padding-left: 16px;
     padding-right: 16px;
@@ -36,15 +37,36 @@ body {
     cursor: pointer;
 }
 
+.bottom-nav {
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    background-color: white;
+    border-top: 2px solid black; /* use border-top instead of border-bottom */
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.bottom-nav img {
+    height: 40px;
+}
+
+
 .pear-icon {
-    height: 30px;
-    margin-bottom: -5px;
+    height: 28px;
+    margin-bottom: -6px;
 }
 
 .icon {
     width: fit-content;
     text-align: center;
     align-items: center;
+    background-color: white;
+    min-width: 80px;
 }
 
 .icon img {
@@ -60,6 +82,48 @@ body {
 
 .potluck-icon {
     position: absolute; 
-    top: 100px;
-    left: 200px;
+    top: 10%;
+    left: 10%;
+}
+
+
+.gridchat-icon {
+    position: absolute; 
+    top: 20%;
+    left: 40%;
+}
+
+.deepquestion-icon {
+    position: absolute; 
+    top: 70%;
+    left: 30%;
+}
+
+.deepquestion-icon .icon img {
+    height: 80px;
+    padding-left: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.weatherballoon-icon .icon img {
+    max-height: 80px;
+    height: auto;
+    width: auto;
+}
+
+.weatherballoon-icon {
+    position: absolute; 
+    top: 50%;
+    left: 70%;
+}
+
+.quickbuck-icon img {
+    padding: 5px
+}
+
+.quickbuck-icon {
+    position: absolute; 
+    top: 10%;
+    left: 80%;
 }
