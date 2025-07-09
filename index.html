@@ -15,10 +15,38 @@
 <body>
     <div class="top-nav">
         <a><img class="pear-icon" src="pear-icon.png"></a>
-        <a>Projects</a>
-        <a>About Me</a>
+        <div class="dropdown">
+            <a class="dropbtn" onclick="toggleDropdown()">Projects</a>
+            <div id="dropdownContent" class="dropdown-content">
+              <a id="openDeepquestion">deepQuestion</a>
+              <a id="openEye">Eye2Eye</a>
+              <a id="openGridchat">Gridchat</a>
+              <a id="openPotluck">PotLuck</a>
+              <a id="openQuickbuck">QuickBuck</a>
+              <a id="openWeather">Weather Balloon</a>
+            </div>
+          </div>
+
+          <script>
+            function toggleDropdown() {
+              const dropdown = document.getElementById("dropdownContent");
+              dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
+            }
+          
+            // Optional: Close dropdown if user clicks outside
+            window.addEventListener("click", function(e) {
+              const button = document.querySelector(".dropbtn");
+              const content = document.getElementById("dropdownContent");
+              if (!button.contains(e.target) && !content.contains(e.target)) {
+                content.style.display = "none";
+              }
+            });
+          </script>
+          
+          
+        <a href="about.html">About Me</a>
         <a href="#" id="openResume">Resume</a>
-        <a>Contact</a>
+        <a href="mailto:ianebcondon@gmail.com">Contact</a>
     </div>
 
     <div class="potluck-icon">
@@ -530,6 +558,46 @@
         });
     </script>
 
+<div id="loadingModal">
+    <h2>Welcome, User</h2>
+    <div class="progress-container">
+        <div class="pixel-bar" id="pixelBar"></div>
+    </div>
+  </div>
+
+  <script>
+const pixelBar = document.getElementById('pixelBar');
+  const loadingModal = document.getElementById('loadingModal');
+  const squareCount = 20;
+  const duration = 5000; // 10 seconds
+  const interval = duration / squareCount;
+
+  // Create pixel squares
+  for (let i = 0; i < squareCount; i++) {
+    const pixel = document.createElement('div');
+    pixel.classList.add('pixel');
+    pixelBar.appendChild(pixel);
+  }
+
+  const pixels = document.querySelectorAll('.pixel');
+  let index = 0;
+
+  const fillTimer = setInterval(() => {
+    if (index < pixels.length) {
+      pixels[index].classList.add('filled');
+      index++;
+    } else {
+      clearInterval(fillTimer);
+      loadingModal.style.display = 'none';
+    }
+  }, interval);
+
+  window.addEventListener('load', () => {
+    // Start filling on load
+  });
+  </script>
+
 </body>
+
 
 </html>
