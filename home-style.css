@@ -145,6 +145,7 @@ body {
     position: absolute;
     top: 10%;
     left: 10%;
+    z-index: -1;
 }
 
 
@@ -152,18 +153,21 @@ body {
     position: absolute;
     top: 20%;
     left: 40%;
+    z-index: -1;
 }
 
 .eye2eye-icon {
     position: absolute;
     top: 44%;
     left: 6%;
+    z-index: -1;
 }
 
 .deepquestion-icon {
     position: absolute;
     top: 70%;
     left: 30%;
+    z-index: -1;
 }
 
 .deepquestion-icon .icon img {
@@ -183,6 +187,7 @@ body {
     position: absolute;
     top: 50%;
     left: 70%;
+    z-index: -1;
 }
 
 .quickbuck-icon img {
@@ -193,12 +198,14 @@ body {
     position: absolute;
     top: 10%;
     left: 80%;
+    z-index: -1;
 }
 
 .trash-icon {
     position: absolute;
     bottom: 60px;
     right: 10px;
+    z-index: -1;
 }
 
 
@@ -536,6 +543,7 @@ body {
 .dropdown {
     position: relative;
     display: inline-block;
+    z-index: 99999999;
 }
 
 .dropbtn {
@@ -551,8 +559,7 @@ body {
     background-color: white;
     border: 2px solid black;
     min-width: 160px;
-    z-index: 1;
-    flex-direction: column;
+    z-index: 99999999;
 }
 
 .dropdown-content a {
