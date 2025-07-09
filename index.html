@@ -16,7 +16,7 @@
     <div class="top-nav">
         <a><img class="pear-icon" src="pear-icon.png"></a>
         <a>Projects</a>
-        <a>About</a>
+        <a>About Me</a>
         <a href="#" id="openResume">Resume</a>
         <a>Contact</a>
     </div>
@@ -42,8 +42,10 @@
 
     <div class="deepquestion-icon">
         <div class="icon">
-            <img src="deepquestion.png">
-            <p>deep-<br>Question:</p>
+            <a href="#" id="openDeepquestion">
+                <img src="deepquestion.png">
+                <p>deepQuestion:</p>
+            </a>
         </div>
     </div>
 
@@ -59,15 +61,31 @@
 
     <div class="weatherballoon-icon">
         <div class="icon">
-            <img src="balloon.png">
-            <p>Weather<br>Balloon</p>
+            <a href="#" id="openWeather">
+                <img src="balloon.png">
+                <p>Weather<br>Balloon</p>
+            </a>
+
+        </div>
+    </div>
+
+    <div class="eye2eye-icon">
+        <div class="icon">
+            <a href="#" id="openEye">
+                <img src="eye2eye.png">
+                <p>Eye2Eye</p>
+            </a>
+
         </div>
     </div>
 
     <div class="trash-icon">
         <div class="icon">
-            <img src="trash.png">
-            <p>Trash</p>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <img src="trash.png">
+                <p>Trash</p>
+            </a>
+
         </div>
     </div>
 
@@ -93,7 +111,12 @@
         </div>
         <div class="nav-item">
             <a href="mailto:ianebcondon@gmail.com">
-                <img src="mail.webp" alt="Email Icon">
+                <img src="mail.webp">
+            </a>
+        </div>
+        <div class="nav-item">
+            <a href="https://devpost.com/ianebcondon">
+                <img src="devpost.png">
             </a>
         </div>
 
@@ -194,8 +217,6 @@
         potluckLink.addEventListener('click', (e) => {
             e.preventDefault();
             potluckModal.style.display = 'flex';
-            // Optional: prevent scrolling when modal open
-            document.body.style.overflow = 'hidden';
         });
 
         // Close modal on close button click
@@ -257,8 +278,6 @@
         gridchatLink.addEventListener('click', (e) => {
             e.preventDefault();
             gridchatModal.style.display = 'flex';
-            // Optional: prevent scrolling when modal open
-            document.body.style.overflow = 'hidden';
         });
 
         // Close modal on close button click
@@ -276,60 +295,240 @@
         });
     </script>
 
-<div id="quickbuckModal">
-    <div class="modal-content">
-        <button class="close-btn" id="closeQuickbuck">&times;</button>
-        <h1>QuickBuck</h1>
-        <div class="potluck-img-text">
-            <img src="quickbuck.jpg">
-            <p class="indented">QuickBuck is a web-app which hosts a token-based currency trading platform. Users buy and sell QuickBuck tokens via the app. The QuickBuck value is algorithmically proportional to how many people are currently holding a QuickBuck.
-            </p>
-            <p class="indented">For example, if I buy a QuickBuck, I would want to wait for others to purchase a QuickBuck after me, and then I would sell to make a profit.
-            </p>
-            <p class="indented">
-                This app idea was pursued in early 2022 but became arbitrary with the rising popularity of Meme coins.
-            </p>
-            <br>
-            <p><strong><u>Frontend:</u></strong>
-                React.js</p>
-            <p><strong><u>Backend:</u></strong> JavaScript, Docker, Google Cloud</p>
-            <br>
-            <div class="modal-link">
-                <a href="https://devpost.com/software/gridchat">View on Devpost</a>
+    <div id="quickbuckModal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeQuickbuck">&times;</button>
+            <h1>QuickBuck</h1>
+            <div class="potluck-img-text">
+                <img src="quickbuck.jpg">
+                <p class="indented">QuickBuck is a web-app which hosts a token-based currency trading platform. Users
+                    buy and sell QuickBuck tokens via the app. The QuickBuck value is algorithmically proportional to
+                    how many people are currently holding a QuickBuck.
+                </p>
+                <p class="indented">For example, if I buy a QuickBuck, I would want to wait for others to purchase a
+                    QuickBuck after me, and then I would sell to make a profit.
+                </p>
+                <p class="indented">
+                    This app idea was pursued in early 2022 but became arbitrary with the rising popularity of Meme
+                    coins.
+                </p>
+                <br>
+                <p><strong><u>Frontend:</u></strong>
+                    React.js</p>
+                <p><strong><u>Backend:</u></strong> JavaScript, Docker, Google Cloud</p>
+
             </div>
 
         </div>
-
     </div>
-</div>
 
-<script>
-    const quickbuckLink = document.getElementById('openQuickbuck');
-    const quickbuckModal = document.getElementById('quickbuckModal');
-    const closeQuickbuckBtn = document.getElementById('closeQuickbuck');
 
-    // Open modal on Resume click
-    quickbuckLink.addEventListener('click', (e) => {
-        e.preventDefault();
-        quickbuckModal.style.display = 'flex';
-        // Optional: prevent scrolling when modal open
-        document.body.style.overflow = 'hidden';
-    });
 
-    // Close modal on close button click
-    closeQuickbuckBtn.addEventListener('click', () => {
-        quickbuckModal.style.display = 'none';
-        document.body.style.overflow = 'auto';
-    });
 
-    // Close modal if clicking outside modal content
-    window.addEventListener('click', (e) => {
-        if (e.target === modal) {
+    <div id="deepquestionModal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeDeepquestion">&times;</button>
+            <h1>deepQuestion:</h1>
+            <div class="potluck-img-text">
+                <img src="deepquestion.png">
+                <p class="indented">deepQuestion is a mental health reflection app designed to turn the phone—often used
+                    as a tool for distraction—into a constructive outlet for emotional growth. This app combats the
+                    isolation and stigma surrounding mental health by creating a space for anonymous reflection and
+                    shared experience.
+                </p>
+
+                <p class="indented"> Each day, users are prompted with a thoughtful question and given 30 seconds to
+                    reflect before submitting a private written response. After submitting, they can explore a feed of
+                    anonymized responses from others, helping them realize they’re not alone in their feelings. The app
+                    uses natural language processing to analyze each reflection, tracking mood trends and progress over
+                    time. A visual graph and mental health “grade” system help users understand their emotional patterns
+                    and personal growth.
+                </p>
+                <p class="indented"> deepQuestion won the CockroachDB Prize at HackDuke 2022.
+
+                </p>
+                <br>
+                <p><strong><u>Frontend:</u></strong>
+                    Cordova, HTML, CSS, JavaScript</p>
+                <p><strong><u>Backend:</u></strong> Django, Python, CockroachDB</p>
+                <br>
+                <div class="modal-link">
+                    <a href="https://devpost.com/software/deepquestion">View on Devpost</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        const deepquestionLink = document.getElementById('openDeepquestion');
+        const deepquestionModal = document.getElementById('deepquestionModal');
+        const closeDeepquestionBtn = document.getElementById('closeDeepquestion');
+
+        // Open modal on Resume click
+        deepquestionLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            deepquestionModal.style.display = 'flex';
+        });
+
+        // Close modal on close button click
+        closeDeepquestionBtn.addEventListener('click', () => {
+            deepquestionModal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+
+        // Close modal if clicking outside modal content
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                deepquestionModal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+    </script>
+
+    <script>
+        const quickbuckLink = document.getElementById('openQuickbuck');
+        const quickbuckModal = document.getElementById('quickbuckModal');
+        const closeQuickbuckBtn = document.getElementById('closeQuickbuck');
+
+        // Open modal on Resume click
+        quickbuckLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            quickbuckModal.style.display = 'flex';
+        });
+
+        // Close modal on close button click
+        closeQuickbuckBtn.addEventListener('click', () => {
             quickbuckModal.style.display = 'none';
             document.body.style.overflow = 'auto';
-        }
-    });
-</script>
+        });
+
+        // Close modal if clicking outside modal content
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                quickbuckModal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+    </script>
+
+
+    <div id="weatherModal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeWeather">&times;</button>
+            <h1>Weather Balloon Research</h1>
+            <div class="potluck-img-text">
+                <img src="balloon.png">
+                <p class="indented">As part of my volunteer work with the Young Scientist Academy, a nonprofit that
+                    empowers youth through science and technology, I led and collaborated on hands-on environmental
+                    research projects throughout middle and high school. One of the most impactful initiatives
+                    was our weather balloon research, where I helped build and program onboard systems to collect
+                    real-time atmospheric data—including barometric pressure, temperature, and ozone levels—at high
+                    altitudes.
+                </p>
+
+                <p class="indented"> In addition to hardware and sensor integration, I also trained machine learning
+                    algorithms to process and interpret the data for 3D environmental mapping. These models were used to
+                    analyze local green space distribution and inform community awareness of urban heat islands and air
+                    quality disparities.
+
+                </p>
+                <br>
+                <div class="modal-link">
+                    <a href="https://www.youngscientistacademy.org/">See more</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        const weatherLink = document.getElementById('openWeather');
+        const weatherModal = document.getElementById('weatherModal');
+        const closeWeatherBtn = document.getElementById('closeWeather');
+
+        // Open modal on Resume click
+        weatherLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            weatherModal.style.display = 'flex';
+        });
+
+        // Close modal on close button click
+        closeWeatherBtn.addEventListener('click', () => {
+            weatherModal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+
+        // Close modal if clicking outside modal content
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                weatherModal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+    </script>
+
+    <div id="eyeModal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeEye">&times;</button>
+            <h1>Eye2Eye</h1>
+            <div class="potluck-img-text">
+                <img src="balloon.png">
+                <p class="indented">Eye2Eye is a research-driven video conferencing project that reimagines virtual
+                    communication by using two webcams and spatial audio to simulate face-to-face interaction. By
+                    placing participants around a virtual table and adjusting both video angles and audio direction,
+                    Eye2Eye creates a more natural, immersive experience.
+
+                </p>
+
+                <p class="indented"> Eye2Eye is a custom video conferencing tool accessed through a web browser and is
+                    part of a user study on the effects of video conferencing on user communication. The tool has
+                    options to add input delay, use multiple cameras, use a circular seating order, and use spatial
+                    sound.
+
+                </p>
+                <br>
+                <p><strong><u>Frontend:</u></strong>
+                    Node.js, HTML, JavaScript</p>
+                <p><strong><u>Backend:</u></strong> Node.js, JavaScript, Render, Oracle Cloud (for custom STUN/TURN
+                    server)</p>
+                <br>
+                <div class="modal-link">
+                    <a href="#">View on GitHub</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        const eyeLink = document.getElementById('openEye');
+        const eyeModal = document.getElementById('eyeModal');
+        const closeEyeBtn = document.getElementById('closeEye');
+
+        // Open modal on Resume click
+        eyeLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            eyeModal.style.display = 'flex';
+        });
+
+        // Close modal on close button click
+        closeEyeBtn.addEventListener('click', () => {
+            eyeModal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+
+        // Close modal if clicking outside modal content
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                eyeModal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+    </script>
 
 </body>
 
