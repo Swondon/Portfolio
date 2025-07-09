@@ -17,7 +17,7 @@ body {
 .top-nav {
     background-color: white;
     border-bottom: 2px solid black;
-    width: 100%;
+    width: 100vw;
     padding: 0px;
     margin: 0px;
 
@@ -259,10 +259,9 @@ body {
 
 #potluckModal .modal-content {
     position: relative;
-    width: 40%;
     min-height: fit-content;
     max-height: 80vh;
-    max-width: 900px;
+    max-width: 768px;
     background: white;
     display: flex;
     flex-direction: column;
@@ -287,7 +286,6 @@ body {
 }
 
 .potluck-img-text {
-    overflow: hidden;
     /* to contain floated elements */
     line-height: 1.6;
     font-size: 20px;
@@ -350,10 +348,9 @@ body {
 
 #gridchatModal .modal-content {
     position: relative;
-    width: 40%;
     min-height: fit-content;
-    max-height: 80%;
-    max-width: 900px;
+    max-height: 80vh;
+    max-width: 768px;
     background: white;
     display: flex;
     flex-direction: column;
@@ -391,10 +388,9 @@ body {
 
 #quickbuckModal .modal-content {
     position: relative;
-    width: 40%;
     min-height: fit-content;
-    max-height: 80%;
-    max-width: 900px;
+    max-height: 80vh;
+    max-width: 768px;
     background: white;
     display: flex;
     flex-direction: column;
@@ -432,10 +428,9 @@ body {
 
 #deepquestionModal .modal-content {
     position: relative;
-    width: 40%;
     min-height: fit-content;
-    max-height: 80%;
-    max-width: 900px;
+    max-height: 80vh;
+    max-width: 768px;
     background: white;
     display: flex;
     flex-direction: column;
@@ -473,10 +468,9 @@ body {
 
 #weatherModal .modal-content {
     position: relative;
-    width: 40%;
     min-height: fit-content;
-    max-height: 80%;
-    max-width: 900px;
+    max-height: 80vh;
+    max-width: 768px;
     background: white;
     display: flex;
     flex-direction: column;
@@ -514,10 +508,9 @@ body {
 
 #eyeModal .modal-content {
     position: relative;
-    width: 40%;
     min-height: fit-content;
-    max-height: 80%;
-    max-width: 900px;
+    max-height: 80vh;
+    max-width: 768px;
     background: white;
     display: flex;
     flex-direction: column;
@@ -538,18 +531,19 @@ body {
     margin-right: -20px;
     margin-top: -20px;
 }
+
 .dropdown {
     position: relative;
     display: inline-block;
-  }
-  
-  .dropbtn {
+}
+
+.dropbtn {
     cursor: pointer;
     font-weight: bold;
     text-decoration: none;
-  }
-  
-  .dropdown-content {
+}
+
+.dropdown-content {
     margin-top: 8px;
     display: none;
     position: absolute;
@@ -558,20 +552,20 @@ body {
     min-width: 160px;
     z-index: 1;
     flex-direction: column;
-  }
-  
-  .dropdown-content a {
+}
+
+.dropdown-content a {
     padding: 10px;
     text-decoration: none;
     display: block;
     color: black;
-  }
-  
-  .dropdown-content a:hover {
+}
+
+.dropdown-content a:hover {
     background-color: #f0f0f0;
-  }
-  
-  #loadingModal {
+}
+
+#loadingModal {
     position: fixed;
     z-index: 9999;
     top: 0;
@@ -583,28 +577,73 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
+    color: white;
+}
 
-  h2 {
-    margin-bottom: 30px;
+h2 {
     font-size: 2em;
     letter-spacing: 2px;
     color: white;
-  }
+}
 
-  .pixel-bar {
+.pixel-bar {
     display: flex;
     gap: 4px;
-  }
+}
 
-  .pixel {
+.pixel {
     width: 20px;
     height: 20px;
     background-color: #111;
     border: 2px solid white;
     transition: background 0.3s;
-  }
+}
 
-  .pixel.filled {
+.pixel.filled {
     background-color: white;
-  }
+}
+
+@media screen and (max-width: 768px) {
+    .start-button p {
+        display: none;
+    }
+
+    .pixel-bar {
+        display: flex;
+        gap: 4px;
+    }
+    
+    .pixel {
+        width: 10px;
+        height: 10px;
+        background-color: #111;
+        border: 2px solid white;
+        transition: background 0.3s;
+    }
+    
+    .pixel.filled {
+        background-color: white;
+    }
+
+    #resumeModal .modal-content,
+    #deepquestionModal .modal-content,
+    #weatherModal .modal-content,
+    #eyeModal .modal-content,
+    #quickbuckModal .modal-content,
+    #gridchatModal .modal-content,
+    #potluckModal .modal-content {
+        position: relative;
+        width: 100vw;
+        min-height: calc(100vh - 90px);
+        max-height: calc(100vh - 90px);
+        max-width: 100vw;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid black;
+        overflow-y: auto;
+        padding: 20px;
+        margin-top: -10px
+    }
+}
+
