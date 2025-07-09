@@ -23,15 +23,20 @@
 
     <div class="potluck-icon">
         <div class="icon">
-            <img src="potluck.png">
-            <p>PotLuck</p>
+
+            <a href="#" id="openPotluck">
+                <img src="potluck.png">
+                <p>PotLuck</p>
+            </a>
         </div>
     </div>
 
     <div class="gridchat-icon">
         <div class="icon">
-            <img src="gridchat.png">
-            <p>GridChat</p>
+            <a href="#" id="openGridchat">
+                <img src="gridchat.png">
+                <p>Gridchat</p>
+            </a>
         </div>
     </div>
 
@@ -44,9 +49,12 @@
 
     <div class="quickbuck-icon">
         <div class="icon">
-            <img src="quickbuck.jpg">
-            <p>QuickBuck</p>
+            <a href="#" id="openQuickbuck">
+                <img src="quickbuck.jpg">
+                <p>QuickBuck</p>
+            </a>
         </div>
+
     </div>
 
     <div class="weatherballoon-icon">
@@ -142,17 +150,186 @@
         });
     </script>
 
-    <!-- Modal container -->
-    <div id="infoModal" class="modal" style="display:none;">
+    <div id="potluckModal">
         <div class="modal-content">
-            <span class="close-button">&times;</span>
-            <h2>Enter your information</h2>
-            <textarea id="infoText" rows="6" cols="40" placeholder="Write something..."></textarea>
-            <br>
-            <button id="saveInfo">Save</button>
+            <button class="close-btn" id="closePotluck">&times;</button>
+            <h1>PotLuck</h1>
+            <div class="potluck-img-text">
+                <img src="potluck.png">
+                <p class="indented">PotLuck is a social wagering app that combines gamification with community
+                    engagement. Users can
+                    create
+                    and join pots — shared pools of money centered around a goal, bet, or topic — and vote on who has
+                    earned
+                    the pot based on consensus.
+                </p>
+                <p class="indented">Users can join public, private, or location based pots, add friends, message each
+                    other to discuss the outcome of pots, view the pots their friends are involved in, deposit and
+                    withdraw money, and much more!</p>
+                <p class="indented">Originally built as a web app in Spring of 2025, PotLuck is currently in active
+                    development and will
+                    be
+                    releasing officially on the Apple App Store.</p>
+                <br>
+                <p><strong><u>Frontend:</u></strong>
+                    HTML, CSS, JavaScript (v2 in Swift)</p>
+                <p><strong><u>Backend:</u></strong> JavaScript, SQL, Docker (v2 using Firebase)</p>
+                <br>
+                <div class="modal-link">
+                    <a href="#">View on GitHub</a>
+
+                </div>
+
+            </div>
+
         </div>
     </div>
 
+    <script>
+        const potluckLink = document.getElementById('openPotluck');
+        const potluckModal = document.getElementById('potluckModal');
+        const closePotluckBtn = document.getElementById('closePotluck');
+
+        // Open modal on Resume click
+        potluckLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            potluckModal.style.display = 'flex';
+            // Optional: prevent scrolling when modal open
+            document.body.style.overflow = 'hidden';
+        });
+
+        // Close modal on close button click
+        closePotluckBtn.addEventListener('click', () => {
+            potluckModal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+
+        // Close modal if clicking outside modal content
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                potluckModal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+    </script>
+
+
+    <div id="gridchatModal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeGridchat">&times;</button>
+            <h1>Gridchat</h1>
+            <div class="potluck-img-text">
+                <img src="gridchat.png">
+                <p class="indented">Gridchat is essentially a local chatroom system with each room being based on the
+                    user’s current location. Each chatroom is around a 100 m by 100 m square in a grid that covers
+                    the world. As the user moves around, they are transferred from chatroom to chatroom based on their
+                    location.
+                </p>
+                <p class="indented">For example, say that the user is in a busy food court in a mall. Many people
+                    would not have the confidence to get up and start networking by walking around and talking
+                    face-to-face
+                    to everyone. Instead, the user can open Gridchat and start texting anyone
+                    who is nearby.
+                </p>
+                <p class="indented">
+                    This app idea was initiated during HackNC 2022.
+                </p>
+                <br>
+                <p><strong><u>Frontend:</u></strong>
+                    Flutter, Dart</p>
+                <p><strong><u>Backend:</u></strong> Flask, Python, SQLite, Google Cloud</p>
+                <br>
+                <div class="modal-link">
+                    <a href="https://devpost.com/software/gridchat">View on Devpost</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        const gridchatLink = document.getElementById('openGridchat');
+        const gridchatModal = document.getElementById('gridchatModal');
+        const closeGridchatBtn = document.getElementById('closeGridchat');
+
+        // Open modal on Resume click
+        gridchatLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            gridchatModal.style.display = 'flex';
+            // Optional: prevent scrolling when modal open
+            document.body.style.overflow = 'hidden';
+        });
+
+        // Close modal on close button click
+        closeGridchatBtn.addEventListener('click', () => {
+            gridchatModal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+
+        // Close modal if clicking outside modal content
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                gridchatModal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+    </script>
+
+<div id="quickbuckModal">
+    <div class="modal-content">
+        <button class="close-btn" id="closeQuickbuck">&times;</button>
+        <h1>QuickBuck</h1>
+        <div class="potluck-img-text">
+            <img src="quickbuck.jpg">
+            <p class="indented">QuickBuck is a web-app which hosts a token-based currency trading platform. Users buy and sell QuickBuck tokens via the app. The QuickBuck value is algorithmically proportional to how many people are currently holding a QuickBuck.
+            </p>
+            <p class="indented">For example, if I buy a QuickBuck, I would want to wait for others to purchase a QuickBuck after me, and then I would sell to make a profit.
+            </p>
+            <p class="indented">
+                This app idea was pursued in early 2022 but became arbitrary with the rising popularity of Meme coins.
+            </p>
+            <br>
+            <p><strong><u>Frontend:</u></strong>
+                React.js</p>
+            <p><strong><u>Backend:</u></strong> JavaScript, Docker, Google Cloud</p>
+            <br>
+            <div class="modal-link">
+                <a href="https://devpost.com/software/gridchat">View on Devpost</a>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<script>
+    const quickbuckLink = document.getElementById('openQuickbuck');
+    const quickbuckModal = document.getElementById('quickbuckModal');
+    const closeQuickbuckBtn = document.getElementById('closeQuickbuck');
+
+    // Open modal on Resume click
+    quickbuckLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        quickbuckModal.style.display = 'flex';
+        // Optional: prevent scrolling when modal open
+        document.body.style.overflow = 'hidden';
+    });
+
+    // Close modal on close button click
+    closeQuickbuckBtn.addEventListener('click', () => {
+        quickbuckModal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    });
+
+    // Close modal if clicking outside modal content
+    window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            quickbuckModal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    });
+</script>
 
 </body>
 
