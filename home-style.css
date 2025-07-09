@@ -11,13 +11,14 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Jersey 10", monospace;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
 }
 
 .top-nav {
     background-color: white;
     border-bottom: 2px solid black;
-    width: 100vw;
+    width: 100%;
     padding: 0px;
     margin: 0px;
     position: fixed;
@@ -208,8 +209,8 @@ body {
     z-index: 9999;
     left: 0;
     top: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -251,8 +252,8 @@ body {
     z-index: 9999;
     left: 0;
     top: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -260,8 +261,8 @@ body {
 #potluckModal .modal-content {
     position: relative;
     min-height: fit-content;
-    max-height: 80vh;
-    max-width: 768px;
+    max-height: 80%;
+    max-width: 600px;
     background: white;
     display: flex;
     flex-direction: column;
@@ -340,8 +341,8 @@ body {
     z-index: 9999;
     left: 0;
     top: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -349,8 +350,8 @@ body {
 #gridchatModal .modal-content {
     position: relative;
     min-height: fit-content;
-    max-height: 80vh;
-    max-width: 768px;
+    max-height: 80%;
+    max-width: 600px;
     background: white;
     display: flex;
     flex-direction: column;
@@ -380,8 +381,8 @@ body {
     z-index: 9999;
     left: 0;
     top: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -389,8 +390,8 @@ body {
 #quickbuckModal .modal-content {
     position: relative;
     min-height: fit-content;
-    max-height: 80vh;
-    max-width: 768px;
+    max-height: 80%;
+    max-width: 600px;
     background: white;
     display: flex;
     flex-direction: column;
@@ -420,8 +421,8 @@ body {
     z-index: 9999;
     left: 0;
     top: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -429,8 +430,8 @@ body {
 #deepquestionModal .modal-content {
     position: relative;
     min-height: fit-content;
-    max-height: 80vh;
-    max-width: 768px;
+    max-height: 80%;
+    max-width: 600px;
     background: white;
     display: flex;
     flex-direction: column;
@@ -460,8 +461,8 @@ body {
     z-index: 9999;
     left: 0;
     top: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -469,8 +470,8 @@ body {
 #weatherModal .modal-content {
     position: relative;
     min-height: fit-content;
-    max-height: 80vh;
-    max-width: 768px;
+    max-height: 80%;
+    max-width: 600px;
     background: white;
     display: flex;
     flex-direction: column;
@@ -500,8 +501,8 @@ body {
     z-index: 9999;
     left: 0;
     top: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -509,8 +510,8 @@ body {
 #eyeModal .modal-content {
     position: relative;
     min-height: fit-content;
-    max-height: 80vh;
-    max-width: 768px;
+    max-height: 80%;
+    max-width: 600px;
     background: white;
     display: flex;
     flex-direction: column;
@@ -570,8 +571,8 @@ body {
     z-index: 9999;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background: black;
     display: flex;
     flex-direction: column;
@@ -633,10 +634,10 @@ h2 {
     #gridchatModal .modal-content,
     #potluckModal .modal-content {
         position: relative;
-        width: 100vw;
-        min-height: calc(100vh - 90px);
-        max-height: calc(100vh - 90px);
-        max-width: 100vw;
+        width: 100%;
+        min-height: calc(100% - 90px);
+        max-height: calc(100% - 90px);
+        max-width: 100%;
         background: white;
         display: flex;
         flex-direction: column;
