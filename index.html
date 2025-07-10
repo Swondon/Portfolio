@@ -43,7 +43,6 @@
                 dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
             }
 
-            // Optional: Close dropdown if user clicks outside
             window.addEventListener("click", function (e) {
                 const button = document.querySelector(".dropbtn");
                 const content = document.getElementById("dropdownContent");
@@ -172,13 +171,12 @@
         }
 
         setInterval(updateClock, 1000);
-        updateClock(); // run once on load
+        updateClock();
     </script>
 
     <div id="resumeModal">
         <div class="modal-content">
             <button class="close-btn" id="closeResume">&times;</button>
-            <!-- Replace 'resume.pdf' with the path to your actual resume PDF -->
             <iframe src="resume.pdf" title="Resume PDF"></iframe>
         </div>
     </div>
@@ -188,21 +186,17 @@
         const modal = document.getElementById('resumeModal');
         const closeBtn = document.getElementById('closeResume');
 
-        // Open modal on Resume click
         resumeLink.addEventListener('click', (e) => {
             e.preventDefault();
             modal.style.display = 'flex';
-            // Optional: prevent scrolling when modal open
             document.body.style.overflow = 'hidden';
         });
 
-        // Close modal on close button click
         closeBtn.addEventListener('click', () => {
             modal.style.display = 'none';
             document.body.style.overflow = 'auto';
         });
 
-        // Close modal if clicking outside modal content
         window.addEventListener('click', (e) => {
             if (e.target === modal) {
                 modal.style.display = 'none';
@@ -253,25 +247,21 @@
         const potluckModal = document.getElementById('potluckModal');
         const closePotluckBtn = document.getElementById('closePotluck');
 
-        // Open modal on Resume click
         potluckLink.addEventListener('click', (e) => {
             e.preventDefault();
             potluckModal.style.display = 'flex';
         });
 
-        // Open modal on Resume click
         potluckLink1.addEventListener('click', (e) => {
             e.preventDefault();
             potluckModal.style.display = 'flex';
         });
 
-        // Close modal on close button click
         closePotluckBtn.addEventListener('click', () => {
             potluckModal.style.display = 'none';
             document.body.style.overflow = 'auto';
         });
 
-        // Close modal if clicking outside modal content
         window.addEventListener('click', (e) => {
             if (e.target === potluckModal) {
                 potluckModal.style.display = 'none';
@@ -322,25 +312,21 @@
         const gridchatModal = document.getElementById('gridchatModal');
         const closeGridchatBtn = document.getElementById('closeGridchat');
 
-        // Open modal on Resume click
         gridchatLink.addEventListener('click', (e) => {
             e.preventDefault();
             gridchatModal.style.display = 'flex';
         });
 
-        // Open modal on Resume click
         gridchatLink1.addEventListener('click', (e) => {
             e.preventDefault();
             gridchatModal.style.display = 'flex';
         });
 
-        // Close modal on close button click
         closeGridchatBtn.addEventListener('click', () => {
             gridchatModal.style.display = 'none';
             document.body.style.overflow = 'auto';
         });
 
-        // Close modal if clicking outside modal content
         window.addEventListener('click', (e) => {
             if (e.target === gridchatModal) {
                 gridchatModal.style.display = 'none';
@@ -422,25 +408,21 @@
         const deepquestionModal = document.getElementById('deepquestionModal');
         const closeDeepquestionBtn = document.getElementById('closeDeepquestion');
 
-        // Open modal on Resume click
         deepquestionLink.addEventListener('click', (e) => {
             e.preventDefault();
             deepquestionModal.style.display = 'flex';
         });
 
-        // Open modal on Resume click
         deepquestionLink1.addEventListener('click', (e) => {
             e.preventDefault();
             deepquestionModal.style.display = 'flex';
         });
 
-        // Close modal on close button click
         closeDeepquestionBtn.addEventListener('click', () => {
             deepquestionModal.style.display = 'none';
             document.body.style.overflow = 'auto';
         });
 
-        // Close modal if clicking outside modal content
         window.addEventListener('click', (e) => {
             if (e.target === deepquestionModal) {
                 deepquestionModal.style.display = 'none';
@@ -456,25 +438,21 @@
         const quickbuckModal = document.getElementById('quickbuckModal');
         const closeQuickbuckBtn = document.getElementById('closeQuickbuck');
 
-        // Open modal on Resume click
         quickbuckLink.addEventListener('click', (e) => {
             e.preventDefault();
             quickbuckModal.style.display = 'flex';
         });
 
-        // Open modal on Resume click
         quickbuckLink1.addEventListener('click', (e) => {
             e.preventDefault();
             quickbuckModal.style.display = 'flex';
         });
 
-        // Close modal on close button click
         closeQuickbuckBtn.addEventListener('click', () => {
             quickbuckModal.style.display = 'none';
             document.body.style.overflow = 'auto';
         });
 
-        // Close modal if clicking outside modal content
         window.addEventListener('click', (e) => {
             if (e.target === quickbuckModal) {
                 quickbuckModal.style.display = 'none';
@@ -521,25 +499,21 @@
         const weatherModal = document.getElementById('weatherModal');
         const closeWeatherBtn = document.getElementById('closeWeather');
 
-        // Open modal on Resume click
         weatherLink.addEventListener('click', (e) => {
             e.preventDefault();
             weatherModal.style.display = 'flex';
         });
 
-        // Open modal on Resume click
         weatherLink1.addEventListener('click', (e) => {
             e.preventDefault();
             weatherModal.style.display = 'flex';
         });
 
-        // Close modal on close button click
         closeWeatherBtn.addEventListener('click', () => {
             weatherModal.style.display = 'none';
             document.body.style.overflow = 'auto';
         });
 
-        // Close modal if clicking outside modal content
         window.addEventListener('click', (e) => {
             if (e.target === weatherModal) {
                 weatherModal.style.display = 'none';
@@ -590,25 +564,21 @@
 
         const closeEyeBtn = document.getElementById('closeEye');
 
-        // Open modal on Resume click
         eyeLink.addEventListener('click', (e) => {
             e.preventDefault();
             eyeModal.style.display = 'flex';
         });
 
-        // Open modal on Resume click
         eyeLink1.addEventListener('click', (e) => {
             e.preventDefault();
             eyeModal.style.display = 'flex';
         });
 
-        // Close modal on close button click
         closeEyeBtn.addEventListener('click', () => {
             eyeModal.style.display = 'none';
             document.body.style.overflow = 'auto';
         });
 
-        // Close modal if clicking outside modal content
         window.addEventListener('click', (e) => {
             if (e.target === modal) {
                 eyeModal.style.display = 'none';
@@ -629,10 +599,9 @@
         const pixelBar = document.getElementById('pixelBar');
         const loadingModal = document.getElementById('loadingModal');
         const squareCount = 20;
-        const duration = 3000; // 3 seconds
+        const duration = 3000;
         const interval = duration / squareCount;
 
-        // Create pixel squares
         for (let i = 0; i < squareCount; i++) {
             const pixel = document.createElement('div');
             pixel.classList.add('pixel');
