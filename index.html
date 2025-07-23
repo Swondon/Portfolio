@@ -13,6 +13,8 @@
     <meta property="og:image" content="https://swondon.com/swondon.png">
     <meta property="og:url" content="https://swondon.com">
     <meta name="twitter:card" content="summary_large_image">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
     <link rel="stylesheet" href="home-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -250,11 +252,15 @@
         potluckLink.addEventListener('click', (e) => {
             e.preventDefault();
             potluckModal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+
         });
 
         potluckLink1.addEventListener('click', (e) => {
             e.preventDefault();
             potluckModal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+
         });
 
         closePotluckBtn.addEventListener('click', () => {
@@ -580,7 +586,7 @@
         });
 
         window.addEventListener('click', (e) => {
-            if (e.target === modal) {
+            if (e.target === eyeModal) {
                 eyeModal.style.display = 'none';
                 document.body.style.overflow = 'auto';
             }
