@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Essential Meta Tags -->
+    <meta name="description"
+        content="Portfolio site for Ian Condon. Projects include PotLuck, Eye2Eye, Gridchat, and more.">
+    <meta property="og:title" content="Ian Condon | Portfolio">
+    <meta property="og:description"
+        content="Explore my web development projects, creative tech ideas, and resume. Built with HTML, CSS, and love.">
+    <meta property="og:image" content="https://swondon.com/swondon.png">
+    <meta property="og:url" content="https://swondon.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="honors-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="icon" href="swondon.png" type="image/png">
+    <title>Ian Condon</title>
+</head>
+
+<body>
+
+    <div class="folder">
+        <div class="header">
+            <p>Honors Portfolio - Ian Condon</p>
+            <a href="index.html" class="close-btn">&times;</a>
+        </div>
+
+        <div class="the-rest">
+
+            <a href="#" id="openPotluck">
+                <img src="potluck.png">
+                <p>PotLuck</p>
+            </a>
+
+            <a href="#" id="openEye">
+                <img src="eye2eye.png">
+                <p>Eye2Eye</p>
+            </a>
+
+            <a href="#" id="open290">
+                <img src="290.png">
+                <p>HON 290 Final Project</p>
+            </a>
+
+            <a href="#" id="open306">
+                <img src="306.png">
+                <p>MUS 306 Final Project</p>
+            </a>
+
+            <a href="#" id="open326">
+                <img src="326.png">
+                <p>CSC 326 Final Project</p>
+            </a>
+
+            <a href="#" id="openHIE">
+                <img src="folder.png">
+                <p>High Impact Experiences</p>
+            </a>
+
+            <a href="#" id="openGridchat">
+                <img src="gridchat.png">
+                <p>Gridchat</p>
+            </a>
+
+            <a href="#" id="openDeepquestion">
+                <img src="deepquestion.png">
+                <p>deepQuestion:</p>
+            </a>
+
+            <a href="#" id="openReadme">
+                <img src="document.png">
+                <p>README</p>
+            </a>
+        </div>
+    </div>
+
+
+    <div id="potluckModal">
+        <div class="modal-content">
+            <button class="close-btn" id="closePotluck">&times;</button>
+            <h1>PotLuck</h1>
+            <div class="potluck-img-text">
+                <img src="potluck.png">
+                <p class="indented">PotLuck is a social wagering app that combines gamification with community
+                    engagement. Users can
+                    create
+                    and join pots — shared pools of money centered around a goal, bet, or topic — and vote on who has
+                    earned
+                    the pot based on consensus.
+                </p>
+                <p class="indented">Users can join public, private, or location based pots, add friends, message each
+                    other to discuss the outcome of pots, view the pots their friends are involved in, deposit and
+                    withdraw money, and much more!</p>
+                <p class="indented">Originally built as a web app in Spring of 2025, PotLuck is currently in active
+                    development and will
+                    be
+                    releasing officially on the Apple App Store.</p>
+                <br>
+                <p><strong><u>Frontend:</u></strong>
+                    HTML, CSS, JavaScript (v2 in Swift)</p>
+                <p><strong><u>Backend:</u></strong> JavaScript, SQL, Docker (v2 using Firebase)</p>
+                <br>
+                <div class="modal-link">
+                    <a href="https://github.com/Swondon/PotLuck-v1">View on GitHub</a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        const potluckLink = document.getElementById('openPotluck');
+        const potluckLink1 = document.getElementById('openPotluck1');
+
+        const potluckModal = document.getElementById('potluckModal');
+        const closePotluckBtn = document.getElementById('closePotluck');
+
+        potluckLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            potluckModal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+
+        });
+
+        potluckLink1.addEventListener('click', (e) => {
+            e.preventDefault();
+            potluckModal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+
+        });
+
+        closePotluckBtn.addEventListener('click', () => {
+            potluckModal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === potluckModal) {
+                potluckModal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+    </script>
+
+
+
+</body>
+
+
+</html>

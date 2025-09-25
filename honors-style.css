@@ -5,14 +5,66 @@
 }
 
 body {
-    background-color: gray;
-    background-image: radial-gradient(white, 1px, transparent 1px);
-    background-size: 3px 3px;
+    height: 100%;
+    background-color: white;
+    margin: 0px;
+    font-family: "Jersey 10", monospace;
+}
+
+.header {
+  background-color: black;
+  height: 5vh;
+  color: white;
+    
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.header p {
+  margin: 0;
+  font-size: 3vh;
+}
+
+.close-btn {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.the-rest {
+  display: flex;
+  flex-wrap: wrap;          /* allows wrapping to next row */
+  gap: 3rem;                /* spacing between items */
+  justify-content: flex-start; /* keep aligned left (or use center/space-evenly) */
+  padding: 10px;
+}
+
+.the-rest a {
+  display: flex;
+  flex-direction: column;   /* stack image above text */
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  width: 100px;             /* fixed width so they line up neatly */
+  font-size: 24px;
+}
+.the-rest img {
+  max-width: 100%;
+  height: auto;
+}
+
+.the-rest p {
+  text-align: center;
+}
+
+* {
     margin: 0;
     padding: 0;
-    font-family: "Jersey 10", monospace;
-    height: 100%;
-    width: 100%;
+    box-sizing: border-box;
 }
 
 .top-nav {
