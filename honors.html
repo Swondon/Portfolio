@@ -45,7 +45,7 @@
             </a>
 
             <a href="#" id="open290">
-                <img src="290.png">
+                <img src="video.png">
                 <p>HON 290 Final Project</p>
             </a>
 
@@ -55,7 +55,7 @@
             </a>
 
             <a href="#" id="open326">
-                <img src="326.png">
+                <img src="326.jpg">
                 <p>CSC 326 Final Project</p>
             </a>
 
@@ -117,37 +117,355 @@
         </div>
     </div>
 
-    <script>
-        const potluckLink = document.getElementById('openPotluck');
-        const potluckLink1 = document.getElementById('openPotluck1');
+    <!-- Eye2Eye Modal -->
+    <div id="eyeModal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeEye">&times;</button>
+            <h1>Eye2Eye</h1>
+            <div class="potluck-img-text">
+                <img src="eye2eye.png">
+                <p class="indented">Eye2Eye is the culmination of my undergraduate research at NC State, which I took as a series of CSC 498 and 499 classes. It is a video-conferencing tool that will be used in a user study to measure the impact of delay and gaze in virtual meetings.
+                </p>
+                <p class="indented">This research project combines computer vision, human-computer interaction, and video conferencing technology to study how different factors affect virtual communication effectiveness.</p>
+                <p class="indented">The tool is designed to provide researchers with precise control over various meeting parameters to conduct controlled studies on virtual collaboration.</p>
+                <br>
+                <p><strong><u>Technologies:</u></strong>
+                    Computer Vision, Video Conferencing, Research Tools</p>
+                <p><strong><u>Research Focus:</u></strong> Human-Computer Interaction, Virtual Meetings</p>
+                <br>
+                <div class="modal-link">
+                    <a href="#">Research Project (Details Coming Soon)</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- HON 290 Final Project Modal -->
+    <div id="hon290Modal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeHon290">&times;</button>
+            <h1>HON 290 Final Project</h1>
+            <div class="potluck-img-text">
+                <p class="indented">This is a video essay that I made on the song "New Slaves" for the Arts in the Civil Rights Movement class, which I took through the Honors Program. I did well on this assignment and was proud of the final product.
+                </p>
+                <p class="indented">The project involved analyzing Kanye West's "New Slaves" in the context of civil rights movements and contemporary social issues, combining music analysis with historical and cultural perspectives.</p>
+                <p class="indented">This assignment allowed me to explore the intersection of music, technology, and social justice while developing my skills in video production and academic analysis.</p>
+                <br>
+                <p><strong><u>Course:</u></strong>
+                    HON 290 - Arts in the Civil Rights Movement</p>
+                <p><strong><u>Format:</u></strong> Video Essay</p>
+                <br>
+                <div style="text-align: center; margin: 20px 0;">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/Yhh7_sWAUkU" 
+                            title="New Slaves Video Essay" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="modal-link">
+                    <a href="https://youtu.be/Yhh7_sWAUkU" target="_blank">Watch on YouTube</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MUS 306 Final Project Modal -->
+    <div id="mus306Modal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeMus306">&times;</button>
+            <h1>MUS 306 Final Project</h1>
+            <div class="potluck-img-text">
+                <p class="indented">I took Computer Music as an elective for my major, which I enjoyed because it combined my passions for Computer Science and music production into one class. My final project for this class was a short music piece that combined everything I learned over the semester.
+                </p>
+                <p class="indented">The project involved creating an original composition using digital audio workstations, synthesizers, and various computer music techniques learned throughout the course.</p>
+                <p class="indented">This experience allowed me to explore the creative intersection of technology and music, applying programming concepts to musical composition and sound design.</p>
+                <br>
+                <p><strong><u>Course:</u></strong>
+                    MUS 306 - Computer Music</p>
+                <p><strong><u>Format:</u></strong> Original Music Composition</p>
+                <br>
+                <div style="text-align: center; margin: 20px 0;">
+                    <audio controls style="width: 100%;">
+                        <source src="I want to make music..wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="modal-link">
+                    <a href="I want to make music..wav" download>Download Music Composition</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CSC 326 Final Project Modal -->
+    <div id="csc326Modal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeCsc326">&times;</button>
+            <h1>CSC 326 Final Project</h1>
+            <div class="potluck-img-text">
+                <p class="indented">This was the first fully implemented full-stack app that I created. It was the final project for Software Development, where my team collaborated and built a fully functioning coffee shop app.
+                </p>
+                <p class="indented">The application included features for ordering coffee, managing inventory, processing payments, and tracking customer orders. It was built using modern web development practices and team collaboration tools.</p>
+                <p class="indented">This project was instrumental in teaching me full-stack development, database design, and the importance of teamwork in software engineering.</p>
+                <br>
+                <p><strong><u>Course:</u></strong>
+                    CSC 326 - Software Development</p>
+                <p><strong><u>Technologies:</u></strong> Full-Stack Web Development, Database Design</p>
+                <br>
+                <div style="text-align: center; margin: 20px 0;">
+                    <img src="wolfcafe.png" style="max-width: 100%; height: auto; border: 2px solid black;">
+                </div>
+                <p style="text-align: center; font-style: italic; color: #666; margin: 10px 0;">
+                    <strong>Note:</strong> Due to academic integrity policies, the source code for this project cannot be shared publicly.
+                </p>
+                <div class="modal-link">
+                    <a href="wolfcafe.png" target="_blank">View Full Screenshot</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- High Impact Experiences Modal -->
+    <div id="hieModal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeHie">&times;</button>
+            <h1>High Impact Experiences</h1>
+            <div class="potluck-img-text">
+                <p class="indented">These experiences represent the most impactful moments of my undergraduate career, shaping who I am as a person and professional.
+                </p>
+                <br>
+                <p><strong><u>President of 180 Degrees Consulting:</u></strong></p>
+                <p class="indented">I am currently President of 180 Degrees Consulting at NC State, where we provide pro-bono consulting work to nonprofits in the greater Raleigh community. Being a leader for 8 project teams and ~60 consultants has been a super impactful experience for me.</p>
+                <br>
+                <div class="modal-link" style="margin: 10px 0;">
+                    <a href="HIE Reflection_Condon, Ian.pdf" target="_blank">HIE Reflection Document 1</a>
+                </div>
+                <p><strong><u>Studying Abroad in Prague:</u></strong></p>
+                <p class="indented">This has probably been the most impactful experience that I have had at NC State. I learned so much about who I am, my love for traveling, and how the rest of the world works, while meeting some of my best friends.</p>
+                <br>
+                <div class="modal-link" style="margin: 10px 0;">
+                    <a href="HIE Reflection_Condon, Ian (1).pdf" target="_blank">HIE Reflection Document 2</a>
+                </div>
+                <p><strong><u>Interning at Gilbarco Veeder-Root:</u></strong></p>
+                <p class="indented">My internship at GVR was my first experience doing software engineering in a professional setting. I learned so much from that experience about industry practices and professional development.</p>
+                <br>
+                <p><strong><u>Reflection Documents:</u></strong></p>
+                <div style="margin: 20px 0;">
+
+
+                    <div class="modal-link" style="margin: 10px 0;">
+                        <a href="HIE Reflection_Condon, Ian (2).pdf" target="_blank">HIE Reflection Document 3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gridchat Modal -->
+    <div id="gridchatModal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeGridchat">&times;</button>
+            <h1>Gridchat</h1>
+            <div class="potluck-img-text">
+                <img src="gridchat.png">
+                <p class="indented">This is a hackathon project from HackNC which is an app where you can chat with anyone in a 100mx100m square in a grid. This grid goes around the entire world.
+                </p>
+                <p class="indented">Gridchat creates location-based chat rooms that allow people in the same physical area to connect and communicate, fostering local community building through technology.</p>
+                <p class="indented">The app uses geolocation services to determine which grid square users are in and connects them with others in the same area, creating unique social experiences based on physical proximity.</p>
+                <br>
+                <p><strong><u>Event:</u></strong>
+                    HackNC Hackathon</p>
+                <p><strong><u>Technologies:</u></strong> Geolocation, Real-time Chat, Mobile Development</p>
+                <br>
+                <div class="modal-link">
+                    <a href="#">Gridchat App (Details Coming Soon)</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DeepQuestion Modal -->
+    <div id="deepquestionModal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeDeepquestion">&times;</button>
+            <h1>deepQuestion</h1>
+            <div class="potluck-img-text">
+                <img src="deepquestion.png">
+                <p class="indented">This is a hackathon project from HackDuke which is an app where you can anonymously journal and track your mental health. We won a prize for this app.
+                </p>
+                <p class="indented">DeepQuestion focuses on mental health awareness and provides users with a safe, anonymous space to reflect on their thoughts and track their emotional well-being over time.</p>
+                <p class="indented">The app combines journaling features with mental health tracking tools, helping users develop better self-awareness and emotional regulation skills.</p>
+                <br>
+                <p><strong><u>Event:</u></strong>
+                    HackDuke Hackathon (Prize Winner)</p>
+                <p><strong><u>Focus:</u></strong> Mental Health, Anonymous Journaling</p>
+                <br>
+                <div class="modal-link">
+                    <a href="#">DeepQuestion App (Details Coming Soon)</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- README Modal -->
+    <div id="readmeModal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeReadme">&times;</button>
+            <h1>How to Use This Website</h1>
+            <div class="potluck-img-text">
+                <p class="indented">Welcome to my Honors Portfolio! This interactive website showcases my academic journey, projects, and experiences during my time at NC State University.
+                </p>
+                <br>
+                <p><strong><u>How to Navigate:</u></strong></p>
+                <p>• <strong>Click any project icon</strong> to open a detailed modal with information about that work</p>
+                <p>• <strong>Close modals</strong> by clicking the × button or clicking outside the modal</p>
+                <p>• <strong>View media files</strong> directly in the modals (videos, audio, images)</p>
+                <p>• <strong>Download files</strong> using the download links in each modal</p>
+                <p>• <strong>Open PDFs</strong> in new tabs to view reflection documents</p>
+                <p>• <strong>View the rest of my Portfolio</strong> by clicking the "x" button in the top right corner of this page</p>
+                <br>
+                <p><strong><u>Portfolio Categories:</u></strong></p>
+                <p>• <strong>Academic Projects:</strong> Technical work from coursework and research</p>
+                <p>• <strong>High Impact Experiences:</strong> Leadership, study abroad, and professional development</p>
+                <p>• <strong>Other Projects:</strong> Hackathon projects and creative endeavors</p>
+                <br>
+                <p><strong><u>Features:</u></strong></p>
+                <p>• Responsive design that works on desktop and mobile</p>
+                <p>• Interactive modals with rich media content</p>
+                <p>• Direct access to project files and documentation</p>
+                <p>• Professional presentation of academic work</p>
+                <br>
+                <div class="modal-link">
+                    <a href="index.html">Return to Main Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Modal elements
+        const potluckLink = document.getElementById('openPotluck');
         const potluckModal = document.getElementById('potluckModal');
         const closePotluckBtn = document.getElementById('closePotluck');
 
+        const eyeLink = document.getElementById('openEye');
+        const eyeModal = document.getElementById('eyeModal');
+        const closeEyeBtn = document.getElementById('closeEye');
+
+        const hon290Link = document.getElementById('open290');
+        const hon290Modal = document.getElementById('hon290Modal');
+        const closeHon290Btn = document.getElementById('closeHon290');
+
+        const mus306Link = document.getElementById('open306');
+        const mus306Modal = document.getElementById('mus306Modal');
+        const closeMus306Btn = document.getElementById('closeMus306');
+
+        const csc326Link = document.getElementById('open326');
+        const csc326Modal = document.getElementById('csc326Modal');
+        const closeCsc326Btn = document.getElementById('closeCsc326');
+
+        const hieLink = document.getElementById('openHIE');
+        const hieModal = document.getElementById('hieModal');
+        const closeHieBtn = document.getElementById('closeHie');
+
+        const gridchatLink = document.getElementById('openGridchat');
+        const gridchatModal = document.getElementById('gridchatModal');
+        const closeGridchatBtn = document.getElementById('closeGridchat');
+
+        const deepquestionLink = document.getElementById('openDeepquestion');
+        const deepquestionModal = document.getElementById('deepquestionModal');
+        const closeDeepquestionBtn = document.getElementById('closeDeepquestion');
+
+        const readmeLink = document.getElementById('openReadme');
+        const readmeModal = document.getElementById('readmeModal');
+        const closeReadmeBtn = document.getElementById('closeReadme');
+
+        // Function to open modal
+        function openModal(modal) {
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Function to close modal
+        function closeModal(modal) {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // PotLuck modal
         potluckLink.addEventListener('click', (e) => {
             e.preventDefault();
-            potluckModal.style.display = 'flex';
-            document.body.style.overflow = 'hidden';
-
+            openModal(potluckModal);
         });
+        closePotluckBtn.addEventListener('click', () => closeModal(potluckModal));
 
-        potluckLink1.addEventListener('click', (e) => {
+        // Eye2Eye modal
+        eyeLink.addEventListener('click', (e) => {
             e.preventDefault();
-            potluckModal.style.display = 'flex';
-            document.body.style.overflow = 'hidden';
-
+            openModal(eyeModal);
         });
+        closeEyeBtn.addEventListener('click', () => closeModal(eyeModal));
 
-        closePotluckBtn.addEventListener('click', () => {
-            potluckModal.style.display = 'none';
-            document.body.style.overflow = 'auto';
+        // HON 290 modal
+        hon290Link.addEventListener('click', (e) => {
+            e.preventDefault();
+            openModal(hon290Modal);
         });
+        closeHon290Btn.addEventListener('click', () => closeModal(hon290Modal));
 
+        // MUS 306 modal
+        mus306Link.addEventListener('click', (e) => {
+            e.preventDefault();
+            openModal(mus306Modal);
+        });
+        closeMus306Btn.addEventListener('click', () => closeModal(mus306Modal));
+
+        // CSC 326 modal
+        csc326Link.addEventListener('click', (e) => {
+            e.preventDefault();
+            openModal(csc326Modal);
+        });
+        closeCsc326Btn.addEventListener('click', () => closeModal(csc326Modal));
+
+        // High Impact Experiences modal
+        hieLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            openModal(hieModal);
+        });
+        closeHieBtn.addEventListener('click', () => closeModal(hieModal));
+
+        // Gridchat modal
+        gridchatLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            openModal(gridchatModal);
+        });
+        closeGridchatBtn.addEventListener('click', () => closeModal(gridchatModal));
+
+        // DeepQuestion modal
+        deepquestionLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            openModal(deepquestionModal);
+        });
+        closeDeepquestionBtn.addEventListener('click', () => closeModal(deepquestionModal));
+
+        // README modal
+        readmeLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            openModal(readmeModal);
+        });
+        closeReadmeBtn.addEventListener('click', () => closeModal(readmeModal));
+
+        // Close modals when clicking outside
         window.addEventListener('click', (e) => {
-            if (e.target === potluckModal) {
-                potluckModal.style.display = 'none';
-                document.body.style.overflow = 'auto';
-            }
+            if (e.target === potluckModal) closeModal(potluckModal);
+            if (e.target === eyeModal) closeModal(eyeModal);
+            if (e.target === hon290Modal) closeModal(hon290Modal);
+            if (e.target === mus306Modal) closeModal(mus306Modal);
+            if (e.target === csc326Modal) closeModal(csc326Modal);
+            if (e.target === hieModal) closeModal(hieModal);
+            if (e.target === gridchatModal) closeModal(gridchatModal);
+            if (e.target === deepquestionModal) closeModal(deepquestionModal);
+            if (e.target === readmeModal) closeModal(readmeModal);
         });
     </script>
 

@@ -375,6 +375,216 @@ body {
     margin-top: -20px;
 }
 
+/* HON 290 Modal */
+#hon290Modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#hon290Modal .modal-content {
+    position: relative;
+    width: 90%;
+    height: auto;
+    max-width: 600px;
+    max-height: 80vh; 
+    min-height: 200px; 
+    background: white;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    overflow-y: auto; 
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+#hon290Modal .close-btn {
+    align-self: flex-end;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    background: black;
+    color: white;
+    margin-right: -20px;
+    margin-top: -20px;
+}
+
+/* MUS 306 Modal */
+#mus306Modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#mus306Modal .modal-content {
+    position: relative;
+    width: 90%;
+    height: auto;
+    max-width: 600px;
+    max-height: 80vh; 
+    min-height: 200px; 
+    background: white;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    overflow-y: auto; 
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+#mus306Modal .close-btn {
+    align-self: flex-end;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    background: black;
+    color: white;
+    margin-right: -20px;
+    margin-top: -20px;
+}
+
+/* CSC 326 Modal */
+#csc326Modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#csc326Modal .modal-content {
+    position: relative;
+    width: 90%;
+    height: auto;
+    max-width: 600px;
+    max-height: 80vh; 
+    min-height: 200px; 
+    background: white;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    overflow-y: auto; 
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+#csc326Modal .close-btn {
+    align-self: flex-end;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    background: black;
+    color: white;
+    margin-right: -20px;
+    margin-top: -20px;
+}
+
+/* High Impact Experiences Modal */
+#hieModal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#hieModal .modal-content {
+    position: relative;
+    width: 90%;
+    height: auto;
+    max-width: 600px;
+    max-height: 80vh; 
+    min-height: 200px; 
+    background: white;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    overflow-y: auto; 
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+#hieModal .close-btn {
+    align-self: flex-end;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    background: black;
+    color: white;
+    margin-right: -20px;
+    margin-top: -20px;
+}
+
+/* README Modal */
+#readmeModal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#readmeModal .modal-content {
+    position: relative;
+    width: 90%;
+    height: auto;
+    max-width: 600px;
+    max-height: 80vh; 
+    min-height: 200px; 
+    background: white;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    overflow-y: auto; 
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+#readmeModal .close-btn {
+    align-self: flex-end;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    background: black;
+    color: white;
+    margin-right: -20px;
+    margin-top: -20px;
+}
+
 .indented {
     text-indent: 2em;
 }
@@ -700,7 +910,12 @@ h2 {
     #eyeModal .modal-content,
     #quickbuckModal .modal-content,
     #gridchatModal .modal-content,
-    #potluckModal .modal-content {
+    #potluckModal .modal-content,
+    #hon290Modal .modal-content,
+    #mus306Modal .modal-content,
+    #csc326Modal .modal-content,
+    #hieModal .modal-content,
+    #readmeModal .modal-content {
         position: relative;
         width: 100%;
         min-height: calc(100% - 90px);
