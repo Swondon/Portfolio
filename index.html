@@ -129,11 +129,10 @@
 
     <div class="trash-icon">
         <div class="icon">
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+            <a href="#" id="openTrash">
                 <img src="trash.png">
                 <p>Trash</p>
             </a>
-
         </div>
     </div>
 
@@ -606,12 +605,14 @@
             <h1>Behavior Chart</h1>
             <div class="potluck-img-text">
                 <img src="behaviorchart.png">
-                <p class="indented">The Behavior Chart is a simple, intuitive tool designed to help track and encourage positive behaviors. Originally created for personal use, this web application provides a visual way to monitor progress and reinforce good habits for individuals or groups.
+                <p class="indented">On our apartment wall, we have a behavior chart. We use it all the time. When someone new comes into our apartment, we put a new pin on it. You get moved up for good behavior and down for bad behavior.
                 </p>
 
-                <p class="indented"> Users can easily add names, assign points for positive actions, and remove points for negative ones. The clean interface and straightforward functionality make it an effective tool for parents, teachers, or anyone looking to implement a simple reward system.
+                <p class="indented">It was simple, fun, and a huge part of our daily lives. But over time, and after a bit too much love, it broke -- so I used AI to build a digital version of the chart.
                 </p>
-                <br>
+
+                <p class="indented">In under 6 hours of vibe coding, we (Google Gemini and I) built the app, connected it to a cloud database, deployed it to a subdomain, and even wrote this LinkedIn post about it. Now, anyone can create, share, and enjoy their own behavior charts with friends and family.</p>
+
                 <p><strong><u>Frontend:</u></strong>
                     HTML, CSS, JavaScript</p>
                 <p><strong><u>Backend:</u></strong> JavaScript (Client-side)</p>
@@ -648,6 +649,41 @@
             if (e.target === behaviorchartModal) {
                 behaviorchartModal.style.display = 'none';
                 document.body.style.overflow = 'auto';
+            }
+        });
+    </script>
+
+    <div id="trashModal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeTrash">&times;</button>
+            <h1>Trash</h1>
+            <div class="trash-content" style="text-align: center; margin-top: 50px; font-size: 24px; flex-grow: 1; display: flex; flex-direction: column; justify-content: center;">
+                <p>It's empty... or is it?</p>
+                <br>
+                <div style="font-size: 16px;">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" style="color: blue; text-decoration: underline;">Look inside</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const trashLink = document.getElementById('openTrash');
+        const trashModal = document.getElementById('trashModal');
+        const closeTrashBtn = document.getElementById('closeTrash');
+
+        trashLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            trashModal.style.display = 'flex';
+        });
+
+        closeTrashBtn.addEventListener('click', () => {
+            trashModal.style.display = 'none';
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === trashModal) {
+                trashModal.style.display = 'none';
             }
         });
     </script>
