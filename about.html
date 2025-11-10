@@ -743,6 +743,70 @@ background: linear-gradient(130deg,
             font-size: 0.9rem;
             color: #888;
         }
+
+        /* Mobile Responsiveness */
+        @media screen and (max-width: 768px) {
+            .wrapper {
+                padding: 0 15px;
+            }
+
+            .main-header .wrapper > div {
+                width: 100%;
+            }
+
+            .main-nav {
+                display: none; /* Hide nav by default on mobile */
+            }
+
+            .hero {
+                min-height: auto;
+                padding: 60px 20px;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .cta-buttons {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                width: 100%;
+                max-width: 300px;
+                margin: 0 auto;
+            }
+
+            .hero .cta-buttons a {
+                margin: 0;
+            }
+
+            section {
+                padding: 60px 0;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .about-container {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline-container::after,
+            .timeline-item::after {
+                display: none; /* Hide timeline graphic on mobile */
+            }
+
+            .timeline-item {
+                padding-left: 0; /* Remove extra padding on mobile */
+                padding-right: 0; /* Remove extra padding on mobile */
+                margin-bottom: 30px; /* Add space between jobs on mobile */
+            }
+        }
     </style>
 </head>
 
@@ -1023,11 +1087,6 @@ background: linear-gradient(130deg,
     <script>
         // The animated background script has been removed to support the white background.
     
-        // Add responsive behavior for the two-column layout
-        if (window.matchMedia("(max-width: 768px)").matches) {
-            document.querySelector('.about-container').style.gridTemplateColumns = '1fr';
-        }
-
         // Skill linking functionality
         document.querySelectorAll('.skill-category li').forEach(skillItem => {
             skillItem.addEventListener('click', (e) => {
