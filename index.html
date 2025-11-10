@@ -118,6 +118,15 @@
         </div>
     </div>
 
+    <div class="behaviorchart-icon">
+        <div class="icon">
+            <a href="#" id="openBehaviorchart">
+                <img src="behaviorchart.png">
+                <p>Behavior Chart</p>
+            </a>
+        </div>
+    </div>
+
     <div class="trash-icon">
         <div class="icon">
             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
@@ -586,6 +595,58 @@
         window.addEventListener('click', (e) => {
             if (e.target === eyeModal) {
                 eyeModal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+    </script>
+
+    <div id="behaviorchartModal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeBehaviorchart">&times;</button>
+            <h1>Behavior Chart</h1>
+            <div class="potluck-img-text">
+                <img src="behaviorchart.png">
+                <p class="indented">The Behavior Chart is a simple, intuitive tool designed to help track and encourage positive behaviors. Originally created for personal use, this web application provides a visual way to monitor progress and reinforce good habits for individuals or groups.
+                </p>
+
+                <p class="indented"> Users can easily add names, assign points for positive actions, and remove points for negative ones. The clean interface and straightforward functionality make it an effective tool for parents, teachers, or anyone looking to implement a simple reward system.
+                </p>
+                <br>
+                <p><strong><u>Frontend:</u></strong>
+                    HTML, CSS, JavaScript</p>
+                <p><strong><u>Backend:</u></strong> JavaScript (Client-side)</p>
+                <br>
+                <div class="modal-link">
+                    <a href="https://behaviorchart.swondon.com" target="_blank">View Live Project</a>
+                </div>
+                <div class="modal-link" style="margin-top: 10px;">
+                    <a href="https://github.com/Swondon/Behavior-Chart" target="_blank">View on GitHub</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        const behaviorchartLink = document.getElementById('openBehaviorchart');
+        const behaviorchartModal = document.getElementById('behaviorchartModal');
+        const closeBehaviorchartBtn = document.getElementById('closeBehaviorchart');
+
+        behaviorchartLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            behaviorchartModal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        });
+
+        closeBehaviorchartBtn.addEventListener('click', () => {
+            behaviorchartModal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === behaviorchartModal) {
+                behaviorchartModal.style.display = 'none';
                 document.body.style.overflow = 'auto';
             }
         });
