@@ -30,12 +30,14 @@
         <div class="dropdown">
             <a class="dropbtn" onclick="toggleDropdown()">Projects</a>
             <div id="dropdownContent" class="dropdown-content">
-                <a id="openDeepquestion1">deepQuestion</a>
+                <a id="openDeepquestion1">deepQuestion:</a>
                 <a id="openEye1">Eye2Eye</a>
                 <a id="openGridchat1">udders.app</a>
                 <a id="openPotluck1">PotLuck</a>
                 <a id="openQuickbuck1">QuickBuck</a>
                 <a id="openWeather1">Weather Balloon</a>
+                <a id="openBehaviorchart1">Behavior Chart</a>
+
             </div>
         </div>
 
@@ -631,10 +633,18 @@
 
     <script>
         const behaviorchartLink = document.getElementById('openBehaviorchart');
+        const behaviorchartLink1 = document.getElementById('openBehaviorchart1');
+
         const behaviorchartModal = document.getElementById('behaviorchartModal');
         const closeBehaviorchartBtn = document.getElementById('closeBehaviorchart');
 
         behaviorchartLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            behaviorchartModal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        });
+
+        behaviorchartLink1.addEventListener('click', (e) => {
             e.preventDefault();
             behaviorchartModal.style.display = 'flex';
             document.body.style.overflow = 'hidden';
