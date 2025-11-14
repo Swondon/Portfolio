@@ -37,6 +37,7 @@
                 <a id="openQuickbuck1">QuickBuck</a>
                 <a id="openWeather1">Weather Balloon</a>
                 <a id="openBehaviorchart1">Behavior Chart</a>
+                <a id="openBeeper1">Beeper</a>
 
             </div>
         </div>
@@ -124,6 +125,15 @@
             <a href="#" id="openBehaviorchart">
                 <img src="behaviorchart.png">
                 <p>Behavior Chart</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="beeper-icon">
+        <div class="icon">
+            <a href="#" id="openBeeper">
+                <img src="beeper.png">
+                <p>Beeper</p>
             </a>
         </div>
     </div>
@@ -660,6 +670,54 @@
                 document.body.style.overflow = 'auto';
             }
         });
+    </script>
+
+    <div id="beeperModal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeBeeper">&times;</button>
+            <h1>Beeper</h1>
+            <div class="potluck-img-text">
+                <img src="beeper.png">
+                <p class="indented">Beeper is a ride-sharing application designed specifically for students, providing a safe and affordable way to travel to and from campus, or around town.
+                </p>
+
+                <p class="indented">Riders request a ride, active beepers accept it, navigate to the rider, pick them up, and transport them to their destination. Riders can pay through Venmo.
+                </p>
+
+                <p><strong><u>Frontend:</u></strong>
+                    React, TypeScript, Vite</p>
+                <p><strong><u>Backend:</u></strong> Firebase</p>
+                <br>
+                <div class="modal-link">
+                    <a href="http://beeper.swondon.com/" target="_blank">Try it out!</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        const beeperLink = document.getElementById('openBeeper');
+        const beeperLink1 = document.getElementById('openBeeper1');
+
+        const beeperModal = document.getElementById('beeperModal');
+        const closeBeeperBtn = document.getElementById('closeBeeper');
+
+        function openBeeperModal(e) {
+            e.preventDefault();
+            beeperModal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        beeperLink.addEventListener('click', openBeeperModal);
+        beeperLink1.addEventListener('click', openBeeperModal);
+
+        closeBeeperBtn.addEventListener('click', () => {
+            beeperModal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+
     </script>
 
     <div id="trashModal">
