@@ -611,6 +611,10 @@ background: linear-gradient(130deg,
             border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
             border: 1px solid #eee;
+            /* Flexbox for vertical alignment */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             transition: all 0.3s ease;
         }
         
@@ -624,6 +628,21 @@ background: linear-gradient(130deg,
             transform: translateY(-5px);
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
         }
+
+        .project-card-cta {
+            display: inline-block;
+            margin-top: 15px; /* Reduced margin-top */
+            font-weight: 500;
+            color: #006A4E;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card-cta:hover {
+            text-decoration: underline;
+            transform: translateX(4px);
+        }
+
 
         .project-card h3 {
             font-size: 1.5rem;
@@ -1017,25 +1036,32 @@ background: linear-gradient(130deg,
                 <div class="project-card">
                     <h3>Potluck Markets</h3>
                     <p>A social wagering iOS app where users create wager pools ("pots") on custom outcomes and invite friends to join. Currently live on the App Store.</p>
-                    <div class="tech-stack">
-                        <span>Swift</span><span class="accent2">Firebase</span><span>React.js</span><span
-                            class="accent2">JavaScript</span><span>SQL</span><span class="accent2">Docker</span>
+                    <div>
+                        <div class="tech-stack">
+                            <span>Swift</span><span class="accent2">Firebase</span><span>React.js</span><span class="accent2">JavaScript</span><span>SQL</span><span class="accent2">Docker</span>
+                        </div>
+                        <a href="index.html#potluck" class="project-card-cta">View Project &rarr;</a>
                     </div>
                 </div>
                 <div class="project-card">
                     <h3>Eye2Eye: Research Video Conferencing</h3>
                     <p>A custom video conferencing tool that reimagines virtual communication by using two webcams and
                         spatial audio to simulate face-to-face interaction for a user study.</p>
-                    <div class="tech-stack">
-                        <span>Node.js</span><span class="accent2">JavaScript</span><span>Render</span><span
-                            class="accent2">Oracle Cloud</span>
+                    <div>
+                        <div class="tech-stack">
+                            <span>Node.js</span><span class="accent2">JavaScript</span><span>Render</span><span class="accent2">WebRTC</span><span class="accent2">Machine Learning</span>
+                        </div>
+                        <a href="index.html#eye2eye" class="project-card-cta">View Project &rarr;</a>
                     </div>
                 </div>
                 <div class="project-card">
-                    <h3>Behavior Chart</h3>
-                    <p>A simple, intuitive tool to track and encourage positive behaviors. Built with Gemini, this app lets users assign points and monitor progress for good habits.</p>
-                    <div class="tech-stack">
-                        <span>React</span><span class="accent2">Vite</span><span>TypeScript</span><span class="accent2">Firebase</span>
+                    <h3>Beeper</h3>
+                    <p>A ride-sharing application designed specifically for students, providing a safe and affordable way to travel to and from campus, or around town.</p>
+                    <div>
+                        <div class="tech-stack">
+                            <span>React</span><span class="accent2">Vite</span><span>TypeScript</span><span class="accent2">Firebase</span>
+                        </div>
+                        <a href="index.html#beeper" class="project-card-cta">View Project &rarr;</a>
                     </div>
                 </div>
             </div>

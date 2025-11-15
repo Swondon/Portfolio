@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Essential Meta Tags -->
     <meta name="description"
-        content="Portfolio site for Ian Condon. Projects include PotLuck, Eye2Eye, Gridchat, and more.">
+        content="Portfolio site for Ian Condon. Projects include Potluck Markets, Eye2Eye, udders, and more.">
     <meta property="og:title" content="Ian Condon | Portfolio">
     <meta property="og:description"
         content="Explore my web development projects, creative tech ideas, and resume. Built with HTML, CSS, and love.">
@@ -33,12 +34,13 @@
                 <a id="openDeepquestion1">deepQuestion:</a>
                 <a id="openEye1">Eye2Eye</a>
                 <a id="openGridchat1">udders.app</a>
-                <a id="openPotluck1">PotLuck</a>
+                <a id="openPotluck1">Potluck Markets</a>
                 <a id="openQuickbuck1">QuickBuck</a>
                 <a id="openWeather1">Weather Balloon</a>
                 <a id="openBehaviorchart1">Behavior Chart</a>
                 <a id="openBeeper1">Beeper</a>
                 <a id="openNothing1">Nothing</a>
+                <a id="openSecretsApp1">The Secrets App</a>
 
             </div>
         </div>
@@ -68,7 +70,7 @@
 
             <a href="#" id="openPotluck">
                 <img src="potluck.png">
-                <p>PotLuck</p>
+                <p>Potluck Markets</p>
             </a>
         </div>
     </div>
@@ -144,6 +146,15 @@
             <a href="#" id="openNothing">
                 <img src="nothing.jpg">
                 <p>Nothing</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="secrets-app-icon">
+        <div class="icon">
+            <a href="#" id="openSecretsApp">
+                <img src="secretsapp.png">
+                <p>The Secrets App</p>
             </a>
         </div>
     </div>
@@ -239,10 +250,10 @@
     <div id="potluckModal">
         <div class="modal-content">
             <button class="close-btn" id="closePotluck">&times;</button>
-            <h1>PotLuck</h1>
+            <h1>Potluck Markets</h1>
             <div class="potluck-img-text">
                 <img src="potluck.png">
-                <p class="indented">PotLuck is a social wagering app that combines gamification with community
+                <p class="indented">Potluck Markets is a social wagering app that combines gamification with community
                     engagement. Users can
                     create
                     and join pots — shared pools of money centered around a goal, bet, or topic — and vote on who has
@@ -252,7 +263,7 @@
                 <p class="indented">Users can join public, private, or location based pots, add friends, message each
                     other to discuss the outcome of pots, view the pots their friends are involved in, deposit and
                     withdraw money, and much more!</p>
-                <p class="indented">Originally built as a web app in Spring of 2025, PotLuck is currently in active
+                <p class="indented">Originally built as a web app in Spring of 2025, Potluck Markets is currently in active
                     development and is now out on the iOS App Store!</p>
                 <br>
                 <p><strong><u>Frontend:</u></strong>
@@ -263,7 +274,7 @@
                     <a href="https://potluck.support" target="_blank">View on App Store</a>
                 </div>
                 <div class="modal-link" style="margin-top: 10px;">
-                    <a href="https://github.com/Swondon/PotLuck-v1">View on GitHub</a>
+                    <a href="https://github.com/Swondon/PotLuck-v1">View early version on GitHub</a>
                 </div>
 
             </div>
@@ -330,7 +341,7 @@
                 <p><strong><u>Backend:</u></strong> Express.js (Originally Flask, Python, SQLite, Google Cloud)</p>
                 <br>
                 <div class="modal-link">
-                    <a href="https://udders.app/">View on udders.app</a>
+                    <a href="https://udders.app/">View Live Project</a>
                 </div>
 
             </div>
@@ -699,7 +710,7 @@
                 <p><strong><u>Backend:</u></strong> Firebase</p>
                 <br>
                 <div class="modal-link">
-                    <a href="http://beeper.swondon.com/" target="_blank">Try it out!</a>
+                    <a href="http://beeper.swondon.com/" target="_blank">View Live Project</a>
                 </div>
 
             </div>
@@ -747,7 +758,7 @@
                 <p><strong><u>Backend:</u></strong> Firebase</p>
                 <br>
                 <div class="modal-link">
-                    <a href="http://nothing.swondon.com" target="_blank">Check it out</a>
+                    <a href="http://nothing.swondon.com" target="_blank">View Live Project</a>
                 </div>
 
             </div>
@@ -771,6 +782,43 @@
         nothingLink1.addEventListener('click', openNothingModal);
 
         closeNothingBtn.addEventListener('click', () => { nothingModal.style.display = 'none'; document.body.style.overflow = 'auto'; });
+    </script>
+
+    <div id="secretsAppModal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeSecretsApp">&times;</button>
+            <h1>The Secrets App</h1>
+            <div class="potluck-img-text">
+                <img src="secretsapp.png">
+                <p class="indented">The Secrets App is a simple, anonymous, and addictive micro-confessions app. Every
+                    time you open it, you’re presented with a random secret left by another user — funny, strange,
+                    wholesome, sad, or downright mysterious. To reveal a new one, you must leave a secret of your own.
+                </p>
+
+                <p class="indented">There are no accounts, no names, no profiles, and no tracking. Just a community of
+                    strangers trading moments, thoughts, confessions, and curiosities.</p>
+
+                <p><strong><u>Frontend:</u></strong> React, Vite, TypeScript</p>
+                <p><strong><u>Backend:</u></strong> Firebase</p>
+                <br>
+                <div class="modal-link">
+                    <a href="https://secrets.swondon.com/" target="_blank">View Live Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const secretsAppLink = document.getElementById('openSecretsApp');
+        const secretsAppLink1 = document.getElementById('openSecretsApp1');
+        const secretsAppModal = document.getElementById('secretsAppModal');
+        const closeSecretsAppBtn = document.getElementById('closeSecretsApp');
+
+        function openSecretsAppModal(e) { e.preventDefault(); secretsAppModal.style.display = 'flex'; document.body.style.overflow = 'hidden'; }
+
+        secretsAppLink.addEventListener('click', openSecretsAppModal);
+        secretsAppLink1.addEventListener('click', openSecretsAppModal);
+        closeSecretsAppBtn.addEventListener('click', () => { secretsAppModal.style.display = 'none'; document.body.style.overflow = 'auto'; });
     </script>
 
     <div id="trashModal">
@@ -847,7 +895,30 @@
         });
     </script>
 
+    <script>
+        // Handle opening modals from URL hash
+        window.addEventListener('load', () => {
+            const hash = window.location.hash.substring(1);
+            if (!hash) return;
+
+            const modalMap = {
+                'potluck': potluckModal,
+                'eye2eye': eyeModal,
+                'beeper': beeperModal,
+                // Add other project hashes and modal variables here
+            };
+
+            const modalToOpen = modalMap[hash];
+
+            if (modalToOpen) {
+                modalToOpen.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            }
+        });
+    </script>
+
 </body>
+
 
 
 </html>
