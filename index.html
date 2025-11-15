@@ -38,6 +38,7 @@
                 <a id="openWeather1">Weather Balloon</a>
                 <a id="openBehaviorchart1">Behavior Chart</a>
                 <a id="openBeeper1">Beeper</a>
+                <a id="openNothing1">Nothing</a>
 
             </div>
         </div>
@@ -134,6 +135,15 @@
             <a href="#" id="openBeeper">
                 <img src="beeper.png">
                 <p>Beeper</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="nothing-icon">
+        <div class="icon">
+            <a href="#" id="openNothing">
+                <img src="nothing.jpg">
+                <p>Nothing</p>
             </a>
         </div>
     </div>
@@ -718,6 +728,49 @@
             document.body.style.overflow = 'auto';
         });
 
+    </script>
+
+    <div id="nothingModal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeNothing">&times;</button>
+            <h1>Nothing</h1>
+            <div class="potluck-img-text">
+                <img src="nothing.jpg">
+                <p class="indented">Nothing is a minimalist app where users compete to see who can do nothing for the longest period. The concept challenges our constant need for engagement and turns inactivity into a competitive sport.
+                </p>
+
+                <p class="indented">The app tracks the duration each user can remain idle without interacting with their device. A global leaderboard displays the top champions of inactivity, creating a fun, quirky social experiment.
+                </p>
+
+                <p><strong><u>Frontend:</u></strong>
+                    React, Vite, TypeScript</p>
+                <p><strong><u>Backend:</u></strong> Firebase</p>
+                <br>
+                <div class="modal-link">
+                    <a href="http://nothing.swondon.com" target="_blank">Check it out</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        const nothingLink = document.getElementById('openNothing');
+        const nothingLink1 = document.getElementById('openNothing1');
+        const nothingModal = document.getElementById('nothingModal');
+        const closeNothingBtn = document.getElementById('closeNothing');
+
+        function openNothingModal(e) {
+            e.preventDefault();
+            nothingModal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        nothingLink.addEventListener('click', openNothingModal);
+        nothingLink1.addEventListener('click', openNothingModal);
+
+        closeNothingBtn.addEventListener('click', () => { nothingModal.style.display = 'none'; document.body.style.overflow = 'auto'; });
     </script>
 
     <div id="trashModal">
